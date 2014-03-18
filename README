@@ -1,0 +1,31 @@
+/**
+ * dcTranslatorPlugin
+ * 
+ * @author Ivan Muller <mullerivan@gmail.com>
+ */
+jQuery is required!
+
+Download the plugin, extract to plugins directory
+
+Enable the plugin in ProjectConfiguration
+  public function setup()
+  {
+    $this->enablePlugins(
+      'sfPropelPlugin',
+      'dcI18NTranslatorPlugin'
+  }
+
+Enable the module in apps/app/config/settings.yml
+    enabled_modules:      [default, translator ]
+
+Change the xml permission to
+    chmod o+w messages.xml
+
+
+the URI to the xml must show with this!
+i18n/es/messages.xml
+
+
+Usage
+
+go to app/translator and voila!
